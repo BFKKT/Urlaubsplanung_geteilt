@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Urlaubsliste" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Urlaubsliste" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01008B41D1D78B5341DEB669B0E4B5A3CD0F" Name="Urlaub" Group="Urlaub" Description="Inhaltstyp für unsere Urlaubsplanung" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{c731e99e-d440-4968-9570-6655363e47da}" DisplayName="Name" Required="TRUE" Name="Name_Urlaub" /><FieldRef ID="{a6ae0bc6-ee14-4676-b5c6-8811170381f4}" DisplayName="Vorname" Required="TRUE" Name="Vorname_Urlaub" /><FieldRef ID="{0acc1b54-d07d-4a4c-bd28-88f78382a33a}" DisplayName="Von" Required="TRUE" Name="Von_Urlaub" Format="DateOnly" /><FieldRef ID="{75056332-028a-4e1a-bddd-12fff20cc01d}" DisplayName="Bis" Required="True" Name="Bis_Urlaub" Format="DateOnly" /><FieldRef ID="{c6312f38-9d83-4162-93a2-8e8e74a39072}" DisplayName="Bemerkungen" Required="FALSE" Name="Bemerkungen_Urlaub" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{c731e99e-d440-4968-9570-6655363e47da}" Name="Name_Urlaub" DisplayName="Name" Type="Text" Required="TRUE" Group="Urlaub"></Field><Field ID="{a6ae0bc6-ee14-4676-b5c6-8811170381f4}" Name="Vorname_Urlaub" DisplayName="Vorname" Type="Text" Required="TRUE" Group="Urlaub"></Field><Field ID="{0acc1b54-d07d-4a4c-bd28-88f78382a33a}" Name="Von_Urlaub" DisplayName="Von" Type="DateTime" Format="DateOnly" StorageTZ="D/M/Y" Required="TRUE" Group="Urlaub"></Field><Field ID="{75056332-028a-4e1a-bddd-12fff20cc01d}" Name="Bis_Urlaub" DisplayName="Bis" Type="DateTime" Format="DateOnly" StorageTZ="D/M/Y" Required="True" Group="Urlaub"></Field><Field ID="{c6312f38-9d83-4162-93a2-8e8e74a39072}" Name="Bemerkungen_Urlaub" DisplayName="Bemerkungen" Type="Note" Required="FALSE" Group="Urlaub"></Field><Field ID="{825c25ce-9f6e-411f-a3f0-a05fff5cd241}" Name="Vorgesetzter_Urlaub" DisplayName="Vorgesetzter" Type="User" Required="TRUE" Group="Urlaub" List="UserInfo"></Field><Field ID="{5d6961a6-2c1c-47f3-8e8d-28c2d231fd5f}" Name="Genehmigungsstatus_Urlaub" DisplayName="Genehmigungsstatus" Type="Choice" Format="Dropdown" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Required="FALSE" Group="Urlaub"><CHOICES><CHOICE>Ausstehend</CHOICE><CHOICE>Abgelehnt</CHOICE><CHOICE>Genehmigt</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    
+      
+    
+    
+      
+     
+
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Name_Urlaub" /><FieldRef Name="Vorname_Urlaub" /><FieldRef Name="Von_Urlaub" /><FieldRef Name="Bis_Urlaub" /><FieldRef Name="Bemerkungen_Urlaub" /><FieldRef Name="Vorgesetzter_Urlaub" /><FieldRef Name="Genehmigungsstatus_Urlaub" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

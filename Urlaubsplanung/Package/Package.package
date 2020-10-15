@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="2b21eb22-5d43-49d6-b4a1-308aa575d7f8" 
+        solutionId="2b21eb22-5d43-49d6-b4a1-308aa575d7f8" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Urlaubsplanung"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="9c281152-394c-4e18-a5db-f2c38c632f28" />
+  </features>
+</package>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5d6961a6-2c1c-47f3-8e8d-28c2d231fd5f}"
+       Name="Genehmigungsstatus_Urlaub"
+       DisplayName="Genehmigungsstatus"
+       Type="Choice" Format="Dropdown"
+       ShowInEditForm="FALSE" 
+       ShowInNewForm="FALSE"
+       Required="FALSE"
+       Group="Urlaub">
+    <CHOICES>
+      <CHOICE>Ausstehend</CHOICE>
+      <CHOICE>Abgelehnt</CHOICE>
+      <CHOICE>Genehmigt</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

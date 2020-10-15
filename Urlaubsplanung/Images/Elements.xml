@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\gantt\grid.png" Url="Images/gantt/grid.png" ReplaceContent="TRUE" />
+    <File Path="Images\gantt\icon_sprite.png" Url="Images/gantt/icon_sprite.png" ReplaceContent="TRUE" />
+    <File Path="Images\gantt\slider_handle.png" Url="Images/gantt/slider_handle.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

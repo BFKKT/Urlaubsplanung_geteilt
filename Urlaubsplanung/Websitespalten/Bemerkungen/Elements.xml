@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c6312f38-9d83-4162-93a2-8e8e74a39072}"
+       Name="Bemerkungen_Urlaub"
+       DisplayName="Bemerkungen"
+       Type="Note"
+       Required="FALSE"
+       Group="Urlaub">
+  </Field>
+</Elements>

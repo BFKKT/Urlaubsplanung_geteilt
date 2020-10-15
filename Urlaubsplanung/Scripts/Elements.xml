@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\NewItem.js" Url="Scripts/NewItem.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\dataDays.js" Url="Scripts/gantt/dataDays.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\dataDaysEnh.js" Url="Scripts/gantt/dataDaysEnh.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\dataHours.js" Url="Scripts/gantt/dataHours.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\jquery.cookie.js" Url="Scripts/gantt/jquery.cookie.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\jquery.fn.gantt.js" Url="Scripts/gantt/jquery.fn.gantt.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\jquery.fn.gantt.min.js" Url="Scripts/gantt/jquery.fn.gantt.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gantt\jquery.min.js" Url="Scripts/gantt/jquery.min.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

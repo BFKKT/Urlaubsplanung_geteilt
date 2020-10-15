@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{825c25ce-9f6e-411f-a3f0-a05fff5cd241}"
+       Name="Vorgesetzter_Urlaub"
+       DisplayName="Vorgesetzter"
+       Type="User"
+       Required="TRUE"
+       Group="Urlaub">
+  </Field>
+</Elements>

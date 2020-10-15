@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Workflow4App" DefaultFile="Workflow.xaml" SupportedTrustLevels="All" SupportedDeploymentScopes="AppPackage" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Workflow.xaml" Target="Genehmigung\" Type="AppPackage" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="WorkflowAssociation.EventSourceGUID" Value="Lists/Urlaubsliste" />
+    <ExtensionDataItem Key="WorkflowAssociation.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociation.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Description" Value="Genehmigung - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.DisplayName" Value="Genehmigung - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventSourceGUID" Value="Lists/Urlaubsliste" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventType" Value="ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Id" Value="5ad1910c-b416-4c6d-aa4e-8831998063ee" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Description" Value="Genehmigung - ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.DisplayName" Value="Genehmigung - ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.EventSourceGUID" Value="Lists/Urlaubsliste" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.EventType" Value="ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Id" Value="5145ba4c-da86-4b7e-8ffb-c6d0533fa90b" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Enabled" Value="false" />
+    <ExtensionDataItem Key="WorkflowDefinition.Description" Value="Mein 'Genehmigung' Workflow" />
+    <ExtensionDataItem Key="WorkflowDefinition.DisplayName" Value="Genehmigung" />
+    <ExtensionDataItem Key="WorkflowDefinition.Id" Value="1a9b8fc0-6e6d-444d-808a-84306acf1c7a" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToId" Value="Lists/Urlaubsliste" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToType" Value="List" />
+  </ExtensionData>
+</ProjectItem>

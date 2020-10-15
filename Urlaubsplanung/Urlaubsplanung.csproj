@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79D26EA8-C0F4-4EB6-9603-79E9B74C3681}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Urlaubsplanung</RootNamespace>
+    <AssemblyName>Urlaubsplanung</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{db223567-2247-4114-b2e3-b27a48d5c13d}</AppFeaturePartId>
+    <WspPartId>{c2308117-0509-4072-bbf4-462c3078bcc7}</WspPartId>
+    <WorkflowPartId>{5851946e-2650-45d2-9e29-450326f85992}</WorkflowPartId>
+    <CspkgPartId>{ae726843-5b35-4ad4-b1c3-00569db222e2}</CspkgPartId>
+    <SqlPackagePartId>{f1c1428e-3f1c-4050-94f5-687b18fb0d54}</SqlPackagePartId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\gantt\style.css" />
+    <Content Include="Images\gantt\grid.png" />
+    <Content Include="Images\gantt\icon_sprite.png" />
+    <Content Include="Images\gantt\slider_handle.png" />
+    <Content Include="Scripts\gantt\dataDays.js" />
+    <Content Include="Scripts\gantt\dataDaysEnh.js" />
+    <Content Include="Scripts\gantt\dataHours.js" />
+    <Content Include="Scripts\gantt\jquery.cookie.js" />
+    <Content Include="Scripts\gantt\jquery.fn.gantt.js" />
+    <Content Include="Scripts\gantt\jquery.fn.gantt.min.js" />
+    <Content Include="Scripts\gantt\jquery.min.js" />
+    <Content Include="Websitespalten\Bemerkungen\Elements.xml" />
+    <Content Include="Websitespalten\Bis\Elements.xml" />
+    <Content Include="Pages\NewItem.aspx" />
+    <Content Include="Scripts\NewItem.js" />
+    <Content Include="Urlaubsliste\Elements.xml" />
+    <Content Include="Urlaubsliste\Schema.xml" />
+    <Content Include="Urlaubsliste\UrlaubslisteInstance\Elements.xml" />
+    <Content Include="Urlaub\Elements.xml" />
+    <Content Include="Websitespalten\Genehmigungsstatus\Elements.xml" />
+    <Content Include="Websitespalten\Von\Elements.xml" />
+    <Content Include="Websitespalten\Vorgesetzter\Elements.xml" />
+    <Content Include="Websitespalten\Vorname\Elements.xml" />
+    <Content Include="Workflows\WorkflowHistoryList\Elements.xml" />
+    <Content Include="Workflows\WorkflowTaskList\Elements.xml" />
+    <None Include="Websitespalten\Bemerkungen\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a4f616d9-8d3c-42c9-a23b-f18ae39d15cf}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Bis\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb1602ac-37f4-47b5-9a9c-cc981b77f32a}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Genehmigungsstatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f778f5a5-2767-400a-a100-bb56a5fda942}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Name\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bf12a682-0500-4958-8a6e-ab144f6aadb9}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f808701-7689-4c8d-b6b3-7756d0787a09}</SharePointProjectItemId>
+    </None>
+    <Content Include="Websitespalten\Name\Elements.xml" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Urlaubsliste\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6767c684-7665-47b4-b371-33df88328e47}</SharePointProjectItemId>
+    </None>
+    <None Include="Urlaubsliste\UrlaubslisteInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3465cb83-9e90-4273-b9f1-26c84d9790a9}</SharePointProjectItemId>
+    </None>
+    <None Include="Urlaub\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{243280c7-fd98-4b41-a32b-bdf9ef84d7c3}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Von\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0f2fe3e-caa8-4000-a05d-b11f1de220a5}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Vorgesetzter\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7218306a-24a0-4347-889f-0e008d273083}</SharePointProjectItemId>
+    </None>
+    <None Include="Websitespalten\Vorname\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3f88f101-1651-45c7-8b2d-379481d3f3f6}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{410acd7b-0c13-4ab2-b477-6e604821fa2d}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\Genehmigung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{abfbf6b7-71a2-4238-9228-f4ea72c4bc6d}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflows\WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b622cac-a86f-45b1-a77d-668943bbd5d6}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1c1428e-3f1c-4050-94f5-687b18fb0d54}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1beaf580-9ccb-471a-bdf9-84c598676c90}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dea20fac-fef5-4bcd-8f20-7a8937bc8b81}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{2b21eb22-5d43-49d6-b4a1-308aa575d7f8}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9c281152-394c-4e18-a5db-f2c38c632f28}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflows\Genehmigung\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities.16.0, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

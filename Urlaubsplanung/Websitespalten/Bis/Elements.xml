@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{75056332-028a-4e1a-bddd-12fff20cc01d}"
+       Name="Bis_Urlaub"
+       DisplayName="Bis"
+       Type="DateTime" Format="DateOnly" StorageTZ="D/M/Y"
+       Required="True"
+       Group="Urlaub">
+  </Field>
+</Elements>
